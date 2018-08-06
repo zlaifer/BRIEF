@@ -1,0 +1,24 @@
+create or replace 
+PACKAGE BODY    UTILITARIO_BSCS_PKG AS
+
+  PROCEDURE prc_consultar_imsi (
+
+      p_vc_campo           IN       VARCHAR2 DEFAULT 'CO_ID',
+
+      p_vc_valor           IN       VARCHAR2,
+
+      p_vc_imsi_actual     OUT      VARCHAR2,
+
+      p_vc_imsi_anterior   OUT      VARCHAR2,
+
+      p_vc_salida          OUT      VARCHAR2
+
+   ) AS
+  BEGIN
+    /* TAREA Se necesita implementación */
+    p_vc_imsi_actual:= 'IMSI4';
+    p_vc_imsi_anterior:= 'IMSI5';
+    p_vc_salida:= 'OK';
+  END prc_consultar_imsi;
+
+END UTILITARIO_BSCS_PKG;
