@@ -1,0 +1,24 @@
+<wsdl:definitions name="GetSegmByDocument_BS" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/BRIEF-24006/HITTS_GetSegmByDocument/GetSegmByDocument_BS" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/BRIEF-24006/HITTS_GetSegmByDocument/GetSegmByDocument_BS" xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/sp/GetSegmByDocument_BS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <plt:partnerLinkType name="GetSegmByDocument_BS_plt">
+    <plt:role name="GetSegmByDocument_BS_role">
+      <plt:portType name="tns:GetSegmByDocument_BS_ptt"/>
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+     <schema xmlns="http://www.w3.org/2001/XMLSchema">
+       <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/sp/GetSegmByDocument_BS" schemaLocation="../Schemas/GetSegmByDocument_BD.xsd"/>
+     </schema>
+    </wsdl:types>
+    <wsdl:message name="args_in_msg">
+        <wsdl:part name="InputParameters" element="db:GetSegmByDocumentRequestBD"/>
+    </wsdl:message>
+    <wsdl:message name="args_out_msg">
+        <wsdl:part name="OutputParameters" element="db:GetSegmByDocumentResponsiveBD"/>
+    </wsdl:message>
+    <wsdl:portType name="GetSegmByDocument_BS_ptt">
+        <wsdl:operation name="GetSegmByDocument_BS">
+            <wsdl:input message="tns:args_in_msg"/>
+            <wsdl:output message="tns:args_out_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

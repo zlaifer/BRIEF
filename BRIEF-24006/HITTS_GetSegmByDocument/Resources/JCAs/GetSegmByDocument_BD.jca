@@ -1,0 +1,13 @@
+<adapter-config name="GetSegmByDocument_BS" adapter="db" wsdlLocation="../WSDLs/GetSegmByDocument_BD.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="hr" location="eis/DB/hr"/>
+  <endpoint-interaction portType="GetSegmByDocument_BS_ptt" operation="GetSegmByDocument_BS">
+    <interaction-spec className="oracle.tip.adapter.db.DBStoredProcedureInteractionSpec">
+      <property name="SchemaName" value="HR"/>
+      <property name="ProcedureName" value="P_HITTS_GETSEGMBYDOCUMENT"/>
+      <property name="QueryTimeout" value="30"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

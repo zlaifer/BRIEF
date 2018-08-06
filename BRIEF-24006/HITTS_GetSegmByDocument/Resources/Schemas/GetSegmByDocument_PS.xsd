@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:element name="GetSegmByDocumentRequestPS">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="NUMERO_DOCUMENTO" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="GetSegmByDocumentResponsivePS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="VOCODIGOSALIDA" type="xsd:string"/>
+        <xsd:element name="VODESCRIPCIONSALIDA" type="xsd:string"/>
+        <xsd:element name="COCURSOR" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
