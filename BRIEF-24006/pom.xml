@@ -11,6 +11,7 @@
 
     <modules>
         <module>System</module>
+        <module>HITTS_GetSegmByDocument</module>
     </modules>
 
 </project>

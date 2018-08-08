@@ -28,7 +28,6 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="HITTS_GetSegmByDocument/HITTS_GetSegmByDocument.jpr"/></hash>
-      <hash><url n="URL" path="SBGetSegmByDocument/SBGetSegmByDocument.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
@@ -47,6 +46,6 @@
       </hash>
    </hash>
    <hash n="oracle.sb.tooling.ide.core.internal.application.SbApplication">
-      <value n="configContextSessionName" v="OSB-IDE_build_1533417435537"/>
+      <value n="configContextSessionName" v="OSB-IDE_build_1533735654567"/>
    </hash>
 </jws:workspace>
