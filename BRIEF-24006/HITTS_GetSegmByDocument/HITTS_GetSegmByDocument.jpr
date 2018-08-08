@@ -206,9 +206,13 @@
             <value n="profileClass" v="oracle.tip.tools.ide.fabric.deploy.sar.SarProfile"/>
             <value n="profileName" v="HITTS_GetSegmByDocument"/>
          </hash>
+         <hash n="Project1">
+            <value n="profileClass" v="SbProjectDeployProfile"/>
+            <value n="profileName" v="Project1"/>
+         </hash>
       </hash>
       <list n="profileList">
-         <string v="HITTS_GetSegmByDocument"/>
+         <string v="Project1"/>
          <string v="HITTS_GetSegmByDocument"/>
       </list>
    </hash>
@@ -301,5 +305,4 @@
          </list>
       </hash>
    </hash>
-   <value n="SOA_WSDL_FOLDER_NAME" v="Resources/WSDLs/"/>
 </jpr:project>
